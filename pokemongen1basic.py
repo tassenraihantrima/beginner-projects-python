@@ -1,4 +1,3 @@
-#pokemongen1basic
 grass = ['bulbasaur', 'ivysaur','venasaur','oddish','gloom', 'vileplume','paras','parasect','bellsprout','weepinbell','victreebel','exeggcute','exeggutor','tangela']
 fire = ['charmander','charmeleon','charizard','vulpix','ninetales','growlithe','arcanine','ponyta','rapidash','magmar','flareon','moltres']
 water = ['squirtle','wartotle','blastoise','psyduck','golduck','poliwag','poliwhirl','poliwarth','tentacool','tentacruel','slowpoke','slowbro','seel','dewgong','shellder','colyster','krabby','kingler','horsea','seadra','goldeen','seaking','staryu','starmie','magikarp','gyarados','lapras','vaporeon','omanyte','omastar','kabuto','kabutops']
