@@ -21,25 +21,15 @@ def checksum(cardno):
     sum_odd = 0
     sum_even = 0
     total = 0
-#Add all digits in the odd places from right to left. so we need to reverse the string at first
     cardno = cardno[::-1]
-#this will reverse the string and assign it from the opposite
     for x in cardno[::2]:
-#this is repeat over every second digit within our cardno
         sum_odd += int(x)
-#The plus-equals operator += provides a convenient way to add a value to an existing variable and assign the new value back to the same variable.
-#Double every second digit from right to left.
-#(If result is a two-digit number, add the two-digit number together to get a single digit.)
     for x in cardno[1::2]:
         x = int(x)*2
         if x >= 10:
-            sum_even += (1+ (x % 10))
- #the largest number here can be 18 as 9 is the largest number. so 18%10 is 8 and 8+1 is 9. 
         else:
             sum_even += int(x)
-#Sum the totals of steps 2 & 3
     total = sum_odd + sum_even
-# If sum is divisible by 10, the credit card number is valid
     if total % 10 == 0:
         print('VALID')
     else:
@@ -47,7 +37,6 @@ def checksum(cardno):
         exit()
 
 cardno = input("Put your card number:")
-#Remove any '-' or ' '
 cardno = cardno.replace('-','')
 cardno = cardno.replace(' ','')
 checksum(cardno)
