@@ -2,7 +2,6 @@
 text = str(input("Input a text:"))
 letters = len([x for x in text if x.isalpha()])
 
-
 words = len(text.split())
 
 pun = ["?", ".", '!']
