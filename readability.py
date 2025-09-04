@@ -1,7 +1,5 @@
-#readability
-    
+
 text = str(input("Input a text:"))
-#x for x essentially means "for each character x in text"
 letters = len([x for x in text if x.isalpha()])
 
 
@@ -14,7 +12,6 @@ L = (letters/words)*100
 S = (sentence/words)*100
 cole = (0.0588 * L) - (0.296 * S) - 15.8
 rcole = round(cole)
-
 
 if rcole < 1:
     print("Before Grade 1.")
